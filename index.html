@@ -43,7 +43,7 @@
 
 <body class="font-lato">
 
-    <header class="px-4 container mx-auto relative mb-36">
+    <header class="container mx-auto relative mb-36">
 
         <nav class="flex items-center justify-between px-12 py-6 lg:bg-[#F85559] rounded-full">
             <div class="w-auto lg:order-2 lg:w-1/5 lg:text-center">
@@ -53,8 +53,7 @@
                 </div>
             </div>
             <div class="block lg:hidden">
-                <button
-                    class="flex items-center px-3 py-2 text-[#121212] rounded navbar-burger">
+                <button class="flex items-center px-3 py-2 text-[#121212] rounded navbar-burger">
                     <svg class="w-6 h-6 fill-current" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                         <title>
                             Menu
@@ -81,13 +80,14 @@
 
             <div class="hidden w-full navbar-menu lg:order-3 lg:block lg:w-2/5 lg:text-right">
                 <span
-                    class="w-full p-4 text-sm border bg-white border-gray-300 rounded-full justify-center  cursor-pointer md:w-1/3">
-                    <input type="search" name="serch" placeholder="Search"
+                    class="w-full p-4 text-sm border bg-white border-gray-300 rounded-full justify-center  cursor-pointer md:w-1/3 relative">
+                    <input type="search" name="search" placeholder="Search"
                         class=" px-4 text-sm items-center rounded-l-full rounded-r-full focus:outline-none" />
+                    <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
                 </span>
+
             </div>
         </nav>
-
 
         <!-- slider or carousel -->
 
@@ -95,7 +95,7 @@
             <!-- slide1 -->
             <div id="slide1" class="carousel-item relative w-full">
                 <div class="hero rounded-lg" style="background-image: url(./images/banner4.png);">
-                    <div class="hero-overlay bg-opacity-30"></div>
+                    <div class="hero-overlay bg-opacity-60"></div>
                     <div class="mx-w-md text-center mx-auto my-auto">
                         <h2 class="text-4xl lg:text-6xl font-bold mb-6 text-white">Exotic tastes at your <br>doorstep
                         </h2>
@@ -108,7 +108,6 @@
                     </div>
                 </div>
             </div>
-
             <!-- slide2 -->
             <div id="slide2" class="carousel-item relative w-full">
                 <div class="hero rounded-lg" style="background-image: url(./images/banner4.png);">
@@ -131,7 +130,7 @@
 
             <div id="slide3" class="carousel-item relative w-full">
                 <div class="hero rounded-lg" style="background-image: url(./images/banner4.png);">
-                    <div class="hero-overlay bg-opacity-30"></div>
+                    <div class="hero-overlay bg-opacity-60"></div>
                     <div class="mx-w-md text-center mx-auto my-auto">
                         <h2 class="text-4xl lg:text-6xl font-bold mb-6 text-white">Exotic tastes at your <br>doorstep
                         </h2>
@@ -149,7 +148,7 @@
             <!-- slide4 -->
             <div id="slide4" class="carousel-item relative w-full">
                 <div class="hero rounded-lg" style="background-image: url(./images/banner4.png);">
-                    <div class="hero-overlay bg-opacity-30"></div>
+                    <div class="hero-overlay bg-opacity-60"></div>
                     <div class="mx-w-md text-center mx-auto my-auto">
                         <h2 class="text-4xl lg:text-6xl font-bold mb-6 text-white">Exotic tastes at your <br>doorstep
                         </h2>
@@ -323,7 +322,8 @@
                     </div>
                 </div>
                 <!-- fourth card -->
-                <div class="card  py-12 bg-gradient-to-r from-[#F4F4F4] to-[#F4F4F4] w-78 border border-gray-300">
+                <div class="card  py-12 bg-gradient-to-r from-[#F4F4F4] to-[#F4F4F4] w-78 border border-gray-300"
+                    id="#my_modal_8">
                     <figure><img class="mb-12" src="./images/fruit9.png" alt="tea" /></figure>
                     <div class="text-center">
                         <h2 class="text-2xl font-bold">12.90$ - 18.85$</h2>
@@ -346,7 +346,7 @@
                         <input type="radio" name="card-4" class="bg-orange-400 mask mask-star-2 mask-half-2" />
                     </div>
                     <div class="space-y-4 text-center mt-4">
-                        <h4 class="text-sm font-semibold text-[#F85559]">Details</h4>
+                        <a class="text-sm font-semibold text-[#F85559]" href="#my_modal_8">Details</a>
                     </div>
                 </div>
 
@@ -458,37 +458,37 @@
 
             <div class="grid lg:grid-cols-3 gap-6">
                 <div class="max-w-md">
-                    <div class="flex flex-cols lg:flex-row gap-4 mb-6 items-center">
+                    <div class="flex gap-4 lg:flex-row flex-col flex-1 text-center lg:text-left items-center">
                         <div class="h-10 w-10 p-8 rounded-full bg-gray-300 justify-center items-center flex">
                             <i class="fa-solid fa-users"></i>
                         </div>
-                        <div class="flex-1 justify-center">
+                        <div class="flex-1">
                             <h3 class="text-base font-extrabold">Dedicated Team</h3>
-                            <div class="w-24 flex h-px bg-gray-300 my-4"></div>
+                            <div class="lg:mr-60 w-24 h-px bg-gray-300 my-4 mx-auto"></div>
                             <p class="text-our-success-primary-bg text-base w-80">Professional employees are there for
                                 you to pick the most amazing and fresh fruits.</p>
                         </div>
 
                     </div>
-                    <div class="flex gap-4 mb-6 flex-row items-center">
+                    <div class="flex gap-4 lg:flex-row flex-col flex-1 text-center lg:text-left items-center">
                         <div class="h-10 w-10 p-8 rounded-full bg-gray-300 justify-center items-center flex">
                             <i class="fa-solid fa-heart"></i>
                         </div>
                         <div class="flex-1">
                             <h3 class="text-base font-extrabold">Dedicated Team</h3>
-                            <div class="w-24 flex h-px bg-gray-300 my-4"></div>
+                            <div class="w-24 lg:mr-60 flex h-px bg-gray-300 my-4 mx-auto"></div>
                             <p class="text-our-success-primary-bg text-base w-80">Professional employees are there for
                                 you to pick the most amazing and fresh fruits.</p>
                         </div>
 
                     </div>
-                    <div class="flex gap-4 flex-row flex-1 items-center">
+                    <div class="flex gap-4 lg:flex-row flex-col flex-1 text-center lg:text-left items-center">
                         <div class="h-10 w-10 p-8 rounded-full bg-gray-300 justify-center items-center flex">
                             <i class="fa-solid fa-gifts"></i>
                         </div>
                         <div class="flex-1">
                             <h3 class="text-base font-extrabold">Dedicated Team</h3>
-                            <div class="w-24 flex h-px bg-gray-300 my-4"></div>
+                            <div class="w-24 lg:mr-60 flex h-px bg-gray-300 my-4 mx-auto"></div>
                             <p class="text-our-success-primary-bg text-base w-80">Professional employees are there for
                                 you to pick the most amazing and fresh fruits.</p>
                         </div>
@@ -499,37 +499,37 @@
                     <img src="./images/whychoose1.png" class="w-full" alt="">
                 </div>
                 <div class="max-w-md">
-                    <div class="flex flex-cols lg:flex-row-reverse gap-4 mb-6 items-center">
+                    <div class="flex gap-4 mb-6 flex-col 2 lg:flex-row-reverse items-center text-center lg:text-right">
                         <div class="h-10 w-10 p-8 rounded-full bg-gray-300 justify-center items-center flex">
                             <i class="fa-solid fa-users"></i>
                         </div>
-                        <div class="flex-1 justify-center">
+                        <div class="flex-1">
                             <h3 class="text-base font-extrabold">Dedicated Team</h3>
-                            <div class="w-24 flex h-px bg-gray-300 my-4"></div>
+                            <div class="w-24 lg:ml-56 h-px bg-gray-300 my-4 mx-auto"></div>
                             <p class="text-our-success-primary-bg text-base w-80">Professional employees are there for
                                 you to pick the most amazing and fresh fruits.</p>
                         </div>
 
                     </div>
-                    <div class="flex gap-4 mb-6 lg:flex-row-reverse items-center">
+                    <div class="flex gap-4 mb-6 flex-col 2 lg:flex-row-reverse items-center text-center lg:text-right">
                         <div class="h-10 w-10 p-8 rounded-full bg-gray-300 justify-center items-center flex">
                             <i class="fa-solid fa-heart"></i>
                         </div>
                         <div class="flex-1">
                             <h3 class="text-base font-extrabold">Dedicated Team</h3>
-                            <div class="w-24 flex h-px bg-gray-300 my-4"></div>
+                            <div class="w-24 lg:ml-56 h-px bg-gray-300 my-4 mx-auto"></div>
                             <p class="text-our-success-primary-bg text-base w-80">Professional employees are there for
                                 you to pick the most amazing and fresh fruits.</p>
                         </div>
 
                     </div>
-                    <div class="flex gap-4 lg:flex-row-reverse flex-1 items-center text-right">
+                    <div class="flex gap-4 mb-6 flex-col 2 lg:flex-row-reverse items-center text-center lg:text-right">
                         <div class="h-10 w-10 p-8 rounded-full bg-gray-300 justify-center items-center flex">
                             <i class="fa-solid fa-gifts"></i>
                         </div>
-                        <div class="text-end">
+                        <div class="flex-1">
                             <h3 class="text-base font-extrabold">Dedicated Team</h3>
-                            <div class="w-24 h-px bg-gray-300 my-4 text-right"></div>
+                            <div class="w-24 lg:ml-56 h-px bg-gray-300 my-4 mx-auto"></div>
                             <p class="text-our-success-primary-bg text-base w-80">Professional employees are there for
                                 you to pick the most amazing and fresh fruits.</p>
                         </div>
@@ -537,7 +537,6 @@
                     </div>
                 </div>
             </div>
-
         </section>
 
     </main>
@@ -562,11 +561,37 @@
             <a href="#"><i class="fa-brands fa-instagram"></i></a>
             <a href="#"><i class="fa-brands fa-apple"></i></a>
         </div>
-
     </footer>
-
-
-
 </body>
 
 </html>
+
+
+
+<div class="modal" id="my_modal_8">
+    <div class="modal-box">
+        <div class="card  py-12 bg-gradient-to-r from-[#F4F4F4] to-[#F4F4F4] w-78">
+            <figure><img class="mb-12" src="./images/fruit9.png" alt="tea" /></figure>
+            <div class="text-center mb-6">
+                <h2 class="text-xl font-extrabold">Banana</h2>
+            </div>
+            <div class="rating rating-lg rating-half justify-center">
+                <input type="radio" name="card-1" class="rating-hidden" />
+                <input type="radio" name="card-1" class="bg-orange-400 mask mask-star-2 mask-half-1" />
+                <input type="radio" name="card-1" class="bg-orange-400 mask mask-star-2 mask-half-2" />
+                <input type="radio" name="card-1" class="bg-orange-400 mask mask-star-2 mask-half-1" checked />
+                <input type="radio" name="card-1" class="bg-orange-400 mask mask-star-2 mask-half-2" />
+                <input type="radio" name="card-1" class="bg-orange-400 mask mask-star-2 mask-half-1" />
+                <input type="radio" name="card-1" class="bg-orange-400 mask mask-star-2 mask-half-2" />
+                <input type="radio" name="card-1" class="bg-orange-400 mask mask-star-2 mask-half-1" />
+                <input type="radio" name="card-1" class="bg-orange-400 mask mask-star-2 mask-half-2" />
+                <input type="radio" name="card-1" class="bg-orange-400 mask mask-star-2 mask-half-1" />
+                <input type="radio" name="card-1" class="bg-orange-400 mask mask-star-2 mask-half-2" />
+            </div>
+        </div>
+        <div class="modal-action flex flex-row items-center justify-center gap-4">
+            <a class="px-8 py-4 rounded-md border border-red-500 text-[#F85559] text-xl" href="#" class="btn">Close</a>
+            <a class="px-8 py-4 rounded-md border bg-[#F85559] text-xl text-white" href="#"> Buy Now</a>
+        </div>
+    </div>
+</div>
